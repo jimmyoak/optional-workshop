@@ -1,11 +1,13 @@
 package org.jimmyoak.workshop.optional.explain.e3;
 
+import org.jimmyoak.workshop.utils.ExerciseWhenFinished;
 import org.junit.Test;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@ExerciseWhenFinished("org.jimmyoak.workshop.optional.exercise.Exercise1")
 public class StringRepresentation {
   @Test
   public void when_empty() throws Exception {
