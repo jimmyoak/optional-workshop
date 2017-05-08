@@ -23,7 +23,7 @@ public class Exercise2 {
   @Test
   @Info("Must call repository.find() if optional contains a value")
   public void if_value_is_present() throws Exception {
-    Optional.of(5).ifPresent(repository::findBy);
+    // TODO: Write your code
 
     verify(repository).findBy(5);
   }
@@ -31,18 +31,14 @@ public class Exercise2 {
   @Test
   @Info("Must call repository.find() if optional does NOT contain a value")
   public void if_value_is_not_present() throws Exception {
-    Optional<Integer> id = Optional.empty();
-
-    if (!id.isPresent()) {
-      repository.findAny();
-    }
+    // TODO: Write your code
 
     verify(repository).findAny();
   }
 
   @Test
   public void get_optional_value() throws Exception {
-    Optional<Integer> optional = Optional.of(3);
+    // TODO: Write your code
 
     assertThat(optional.get()).isEqualTo(3);
   }

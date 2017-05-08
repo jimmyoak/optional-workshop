@@ -20,12 +20,7 @@ public class Exercise3 {
       "only if the string length is larger than 4 and ends with 'y', otherwise, get unknown",
   })
   public void first_letter_with_some_conditions() throws Exception {
-    String firstLetter = possiblyAString()
-        .filter(string -> string.length() > 4)
-        .filter(string -> string.endsWith("y"))
-        .map(string -> string.charAt(0))
-        .map(String::valueOf)
-        .orElse("unknown");
+    // TODO: Write your code
 
     assertThat(firstLetter).isEqualTo("j");
   }
@@ -36,12 +31,7 @@ public class Exercise3 {
       "only if the string length is larger than 5 and ends with 'my', otherwise, get unknown",
   })
   public void first_letter_with_some_other_conditions() throws Exception {
-    String firstLetter = possiblyAString()
-        .filter(string -> string.length() > 5)
-        .filter(string -> string.endsWith("y"))
-        .map(string -> string.charAt(0))
-        .map(String::valueOf)
-        .orElse("unknown");
+    // TODO: Write your code
 
     assertThat(firstLetter).isEqualTo("unknown");
   }
@@ -52,9 +42,7 @@ public class Exercise3 {
       "using possiblyAString() value, or get the value from heavyOperation() instead",
   })
   public void get_int_from_possibly_a_string() throws Exception {
-    Integer intValue = anotherPossibleString()
-        .flatMap(this::intFrom)
-        .orElseGet(this::heavyOperation);
+    // TODO: Write your code
 
     assertThat(intValue).isEqualTo(0);
   }
@@ -65,7 +53,9 @@ public class Exercise3 {
   })
   public void int_from_dog() throws Exception {
     assertThatExceptionOfType(IllegalArgumentException.class)
-        .isThrownBy(() -> intFrom("dog").orElseThrow(IllegalArgumentException::new));
+        .isThrownBy(() -> {
+          // TODO: Write your code
+        });
   }
 
   private Optional<String> possiblyAString() {
