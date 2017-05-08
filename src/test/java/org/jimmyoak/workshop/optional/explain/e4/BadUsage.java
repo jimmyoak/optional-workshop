@@ -1,6 +1,7 @@
 package org.jimmyoak.workshop.optional.explain.e4;
 
 import org.jimmyoak.workshop.utils.AvoidUsage;
+import org.jimmyoak.workshop.utils.ExerciseWhenFinished;
 import org.jimmyoak.workshop.utils.Info;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +21,7 @@ import static org.mockito.Mockito.verify;
     "Optional allows us to treat its possible value in a different ways. Some ways are discouraged and should be avoided.",
     "Here we will see the ones to avoid its usage"
 })
+@ExerciseWhenFinished("Exercise2")
 public class BadUsage {
 
   @Mock
