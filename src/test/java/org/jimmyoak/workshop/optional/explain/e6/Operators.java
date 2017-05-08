@@ -1,5 +1,6 @@
 package org.jimmyoak.workshop.optional.explain.e6;
 
+import org.jimmyoak.workshop.utils.ExerciseWhenFinished;
 import org.jimmyoak.workshop.utils.Info;
 import org.junit.Test;
 
@@ -13,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
     "Optional provides three methods to operate over the present value",
     "Callback will execute when a value is present",
 })
+@ExerciseWhenFinished("Exercise3")
 public class Operators {
 
   @Test

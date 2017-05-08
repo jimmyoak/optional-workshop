@@ -13,7 +13,7 @@ import static org.mockito.Mockito.verify;
 
 @Info({
     "Basically, make the tests pass!!",
-    "DON'T TOUCH THE EXISTING CODE, UNLESS IT'S SPECIFIED",
+    "DON'T TOUCH THE EXISTING CODE",
 })
 @RunWith(MockitoJUnitRunner.class)
 public class Exercise2 {
